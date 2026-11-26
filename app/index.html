@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Family Ledger — Household Budget</title>
+<meta name="description" content="The Marlowe family budget: dashboard, transactions, budgets, savings goals, bills and a 50/30/20 calculator.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/"><span class="brand-mark">FL</span><span class="brand-name">The Family Ledger</span></a>
+    <span class="header-tag">Marlowe family · November 2026</span>
+  </div>
+  <nav id="mainnav" aria-label="Main navigation">
+    <a href="#/">Dashboard</a>
+    <a href="#/transactions">Transactions</a>
+    <a href="#/budgets">Budgets</a>
+    <a href="#/goals">Goals</a>
+    <div class="more-wrap">
+      <button id="moreBtn" type="button" aria-haspopup="true">More ▾</button>
+      <div class="more-panel" id="morePanel">
+        <a href="#/bills">Bills</a>
+        <a href="#/calculator">Calculator</a>
+        <a href="#/tips">Tips</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<main id="view"></main>
+<footer class="site-footer">
+  <p>The Family Ledger — a household budget site for the Marlowe family. All figures are stored only in your browser (localStorage); nothing leaves this device.</p>
+</footer>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
